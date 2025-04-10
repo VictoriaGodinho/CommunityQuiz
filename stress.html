@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stress Triggers | Stress Relief Tool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="stressPage">
+
+  <main class="container">
+    <h1>What’s stressing you out?</h1>
+    <p>We all have different stress triggers. Let’s figure yours out and how you’re coping.</p>
+
+    <form id="stressForm">
+      <label>
+        What’s your main source of stress?
+        <select name="trigger" required>
+          <option value="">--Select--</option>
+          <option value="school">School</option>
+          <option value="work">Work</option>
+          <option value="social">Social life</option>
+          <option value="health">Health</option>
+          <option value="other">Other</option>
+        </select>
+      </label><br><br>
+
+      <label>
+        How do you currently deal with stress?<br>
+        <input type="checkbox" name="coping" value="exercise"> Exercise<br>
+        <input type="checkbox" name="coping" value="meditation"> Meditation<br>
+        <input type="checkbox" name="coping" value="talking"> Talking to someone<br>
+        <input type="checkbox" name="coping" value="avoiding"> Avoiding the problem<br>
+        <input type="checkbox" name="coping" value="none"> I’m not sure<br>
+      </label><br><br>
+
+      <button type="submit">See My Results</button>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

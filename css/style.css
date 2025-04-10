@@ -1,0 +1,106 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    transition: background 1s ease;
+    background: linear-gradient(45deg, #999, #bbb);
+    background-size: 200% 200%;
+    animation: floatBackground 20s infinite alternate;
+  }
+  
+  .container {
+    padding: 40px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #ffffffcc;
+    color: #333;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #fff;
+  }
+  
+  /* Mood-specific background styles */
+  .happy-bg {
+    background: linear-gradient(120deg, #f9d423, #ff4e50);
+  }
+  
+  .stressed-bg {
+    background: linear-gradient(120deg, #5a2a83, #9d0191);
+  }
+  
+  .tired-bg {
+    background: linear-gradient(120deg, #3a3d40, #2c5364);
+  }
+  
+  .calm-bg {
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+  }
+  
+  @keyframes floatBackground {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+
+#sleepPage {
+    background: radial-gradient(circle, #7F7FD5, #86A8E7, #91EAE4);
+    animation: floatEnergy 25s linear infinite;
+  }
+  
+  @keyframes floatEnergy {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+  }
+  
+  #stressPage {
+    background: linear-gradient(-45deg, #b06ab3, #4568dc);
+    background-size: 400% 400%;
+    animation: stressWaves 30s ease infinite;
+  }
+  
+  @keyframes stressWaves {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  #resultsPage {
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    background-size: 200% 200%;
+    animation: calmSky 30s ease infinite;
+  }
+  
+  @keyframes calmSky {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .breath-bubble {
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    margin: 40px auto;
+    animation: breathe 6s ease-in-out infinite;
+  }
+  
+  @keyframes breathe {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.4);
+    }
+  }
+  

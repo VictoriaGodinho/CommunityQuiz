@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sleep & Energy | Stress Relief Tool</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="sleepPage">
+
+  <main class="container">
+    <h1>Sleep & Energy</h1>
+    <p>Tell us how you’ve been sleeping and how your energy feels today.</p>
+
+    <form id="sleepForm">
+      <label>
+        How would you rate your recent sleep?
+        <select name="sleep" required>
+          <option value="">--Select--</option>
+          <option value="great">Great</option>
+          <option value="okay">Okay</option>
+          <option value="poor">Poor</option>
+        </select>
+      </label><br><br>
+
+      <label>
+        What’s your current energy level?
+        <input type="range" name="energy" min="1" max="10" step="1" required>
+      </label>
+      <div id="energyValue">5</div>
+
+      <br><br>
+      <button type="submit">Next</button>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
